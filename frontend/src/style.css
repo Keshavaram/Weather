@@ -1,0 +1,78 @@
+*
+{
+    margin: 5px;
+}
+
+#weatherCard
+{
+    background-color: #303F9F;
+    backdrop-filter: blur(5px);
+    border-radius: 5rem;
+    height:40rem;
+    padding : 3rem;
+}
+
+#forecastCard
+{
+    background-color: beige;
+    border-radius: 2rem;
+    height:8rem;
+    width : 10rem;
+    padding-top: 35px;
+    text-align: center;
+}
+
+#mainImage
+{
+    width: 100px;
+    height : 100px;
+    margin-right: 20rem;
+}
+
+.forecastImage
+{
+    width: 40px;
+    height : 40px;
+}
+
+#current
+{
+    background-color: #03A9F4;
+    height : 15rem;
+    border-radius: 5rem;
+    padding-left: 20px;
+    padding-top: 20px;
+    display : flex;
+    flex-direction : row;
+}
+
+#forecast
+{
+    background-color: #03A9F4;
+    height : 11rem;
+    border-radius: 5rem;
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    margin-top: 2rem;
+}
+
+#location
+{
+    display : flex;
+    flex-direction :row;
+}
+
+#city
+{
+    padding-top: 10px;
+}
+
+#daySelect
+{
+    border-radius: 20px;
+    border-style: hidden;
+    background: #03A9F4;
+    margin-left : 50rem;
+    padding-left: 3px;
+}
