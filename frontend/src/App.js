@@ -32,11 +32,14 @@ class Weather extends React.Component
             pressure : "",
             wind : "",
             today : "",
-            days : ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
+            days : ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+            searchQuery : ""
         }
         this.fetchCurrentData = this.fetchCurrentData.bind(this);
         this.daySelect = this.daySelect.bind(this);
         this.runOnce();
+        this.captureQuery = this.captureQuery.bind(this);
+        this.search = this.search.bind(this);
     }
 
     async runOnce()
@@ -99,10 +102,24 @@ class Weather extends React.Component
         day = event.target.value;
     }
 
+    search()
+    {
+        console.log(this.state.searchQuery)
+    }
+
+    captureQuery(event)
+    {
+        this.setState({searchQuery : event.target.value});
+    }
+
     render()
     {
         return(
             <section id={"weatherCard"}>
+                <div style={{"textAlign" : "center"}}>
+                    <input className={"search"}  type={"text"} onChange={this.captureQuery}/>
+                    <input className={"search"} type={"button"} value={"Search"} onClick={this.search}/>
+                </div>
                 <div id={"location"} style={{"display":"flex","flexDirection" : "row"}}>
                     <img className={"forecastImage"} alt={"..."} src={loc}/>
                     <h3 id={"city"}>Now in {this.state.city}</h3>

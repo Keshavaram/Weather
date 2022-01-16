@@ -76,3 +76,12 @@
     margin-left : 50rem;
     padding-left: 3px;
 }
+
+.search
+{
+    font-size: 30px;
+    border-radius: 20px;
+    border-style: hidden;
+    background-color: ivory;
+    padding: 10px;
+}

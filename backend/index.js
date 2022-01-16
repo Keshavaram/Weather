@@ -2,8 +2,8 @@ import fetch from "node-fetch";
 import express from 'express';
 
 const app = express();
-const forecastUrl = "https://api.openweathermap.org/data/2.5/forecast?q=Bangalore,India&APPID=b3953cb630387448bb322281abc1fbe2&units=metric"
-const currentUrl = "https://api.openweathermap.org/data/2.5/weather?q=Bangalore,India&APPID=b3953cb630387448bb322281abc1fbe2&units=metric"
+const forecastUrl = "https://api.openweathermap.org/data/2.5/forecast?q=Bangalore,India&APPID=<your client ID>&units=metric"
+const currentUrl = "https://api.openweathermap.org/data/2.5/weather?q=Bangalore,India&APPID=<your client ID>&units=metric"
 
 let fore = [];
 const days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
